@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ভালোবাসি শুভপুর | স্মার্ট শুভপুর গড়ি সবাই মিলে</title>
+  <meta name="description" content="৯ নং শুভপুর ইউনিয়নের সবার প্ল্যাটফর্ম: সমস্যা ও ভালো খবর শেয়ার করুন, সত্য যাচাই করুন, তরুণদের সাথে মাদকমুক্ত স্মার্ট শুভপুর গড়ুন।">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="feed.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <span>৯ নং শুভপুর ইউনিয়ন · ছাগলনাইয়া · ফেনী</span>
+      <span>জরুরি প্রয়োজনে কল করুন <b>৯৯৯</b> (বিনামূল্যে)</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="#top" aria-label="ভালোবাসি শুভপুর, প্রথম পাতা">
+        <svg width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">
+          <circle cx="23" cy="23" r="23" fill="#134b59"/>
+          <path d="M8 29c5-4 10-4 15 0s10 4 15 0" stroke="#dcecee" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M8 34c5-4 10-4 15 0s10 4 15 0" stroke="#2a7f8f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M23 26V10" stroke="#c9a227" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M23 14c-4-1-6-3-6-6 3 0 6 2 6 6zm0 5c4-1 6-3 6-6-3 0-6 2-6 6z" fill="#c9a227"/>
+        </svg>
+        <span class="logo__name">ভালোবাসি শুভপুর<span class="logo__sub">স্মার্ট শুভপুর গড়ি সবাই মিলে</span></span>
+      </a>
+      <nav class="menu" aria-label="প্রধান মেনু">
+        <a href="#feed">শুভপুর ফিড</a>
+        <a href="#youth">তরুণ শুভপুর</a>
+        <a href="#smart">স্মার্ট শুভপুর</a>
+        <a href="#wards">ওয়ার্ড</a>
+        <a href="#help">জরুরি নম্বর</a>
+        <a href="#services">সেবা</a>
+      </nav>
+      <a class="btn btn--clay" href="#compose">পোস্ট করুন</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- হিরো -->
+    <section class="hero hero--feed" aria-labelledby="hero-title">
+      <div class="container">
+        <div>
+          <p class="hero__eyebrow">৯ নং শুভপুর ইউনিয়ন · ১১টি গ্রাম · প্রায় ৩১ হাজার মানুষ</p>
+          <h1 id="hero-title">স্মার্ট শুভপুর গড়ি,<br><span>সবাই মিলে।</span></h1>
+          <p class="hero__lead">সমস্যা হোক বা ভালো খবর, সবই এখানে। আপনি জানান, সবাই দেখুক, সত্য-মিথ্যা যাচাই করুক। ভালো কাজের উদযাপন হোক, খারাপের সমাধান হোক।</p>
+          <div class="hero__actions">
+            <a class="btn btn--clay" href="#compose">এলাকার খবর জানান</a>
+            <a class="btn btn--line" href="#feed">সবার পোস্ট দেখুন</a>
+          </div>
+        </div>
+        <aside class="live-card" aria-label="শুভপুর ফিডের সারসংক্ষেপ">
+          <p class="live-card__label"><i></i> শুভপুর ফিড এখন</p>
+          <div class="live-card__grid">
+            <div><b id="stat-posts">০</b><span>মোট পোস্ট</span></div>
+            <div><b id="stat-good">০</b><span>ভালো খবর ও পরিবর্তন</span></div>
+            <div><b id="stat-solved">০</b><span>সমস্যার সমাধান</span></div>
+            <div><b id="stat-reactions">০</b><span>মানুষের প্রতিক্রিয়া</span></div>
+          </div>
+          <p class="live-card__top">সবচেয়ে বেশি বাম্প: <b id="stat-top">…</b></p>
+        </aside>
+      </div>
+      <svg class="hero__fields" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 150 C 240 110 420 170 720 140 S 1200 100 1440 140 V220 H0Z" fill="#134b59"/>
+        <path d="M0 180 C 300 150 520 200 820 175 S 1260 150 1440 175 V220 H0Z" fill="#2a7f8f" opacity=".55"/>
+        <path d="M0 205 C 360 190 700 220 1040 200 S 1320 195 1440 205 V220 H0Z" fill="#fbf8f1"/>
+      </svg>
+    </section>
+
+    <!-- শুভপুর ফিড -->
+    <section class="section feed-section" id="feed" aria-labelledby="feed-title">
+      <div class="container">
+        <div class="head">
+          <div>
+            <p class="kicker">শুভপুর ফিড</p>
+            <h2 class="title" id="feed-title">শুভপুরে এখন কী হচ্ছে?</h2>
+          </div>
+          <p class="lead">সমস্যা, ভালো খবর, পরিবর্তন, পরামর্শ: সব এক জায়গায়। গুরুত্বপূর্ণ পোস্ট “বাম্প” করে সবার সামনে আনুন।</p>
+        </div>
+
+        <div class="feed-layout">
+          <!-- বাম: ফিল্টার -->
+          <aside class="feed-filters" aria-label="ফিল্টার">
+            <p class="filter-title">ধরন</p>
+            <div class="type-tabs" role="tablist" aria-label="পোস্টের ধরন">
+              <button class="type-tab is-active" type="button" data-type="all">সব পোস্ট</button>
+              <button class="type-tab" type="button" data-type="problem"><i class="dot dot--problem"></i>সমস্যা</button>
+              <button class="type-tab" type="button" data-type="good"><i class="dot dot--good"></i>ভালো খবর</button>
+              <button class="type-tab" type="button" data-type="change"><i class="dot dot--change"></i>পরিবর্তন হয়েছে</button>
+              <button class="type-tab" type="button" data-type="idea"><i class="dot dot--idea"></i>পরামর্শ</button>
+            </div>
+            <label class="filter-title" for="filter-ward">ওয়ার্ড</label>
+            <select id="filter-ward" class="filter-select">
+              <option value="all">সব ওয়ার্ড</option>
+              <option value="০১">০১: জয়পুর</option><option value="০২">০২: জয়পুর, জয়চাঁদপুর</option>
+              <option value="০৩">০৩: জয়চাঁদপুর, জগন্নাথ সোনাপুর</option><option value="০৪">০৪: দক্ষিণ ও উত্তর বল্লভপুর</option>
+              <option value="০৫">০৫: কৈয়ারা, ছয়ঘরিয়া</option><option value="০৬">০৬: চম্পকনগর</option>
+              <option value="০৭">০৭: দক্ষিণ মন্দিয়া</option><option value="০৮">০৮: দক্ষিণ কুহুমা</option>
+              <option value="০৯">০৯: উত্তর মন্দিয়া</option>
+            </select>
+            <p class="filter-title">সাজান</p>
+            <div class="sort-tabs">
+              <button class="sort-tab is-active" type="button" data-sort="new">নতুন আগে</button>
+              <button class="sort-tab" type="button" data-sort="bump">সবচেয়ে বেশি বাম্প</button>
+              <button class="sort-tab" type="button" data-sort="popular">জনপ্রিয়</button>
+            </div>
+            <div class="legend">
+              <p class="filter-title">প্রতিক্রিয়ার মানে</p>
+              <ul>
+                <li><b>সত্যি / মিথ্যা</b> ঘটনাটি আসলেই ঘটেছে কি না</li>
+                <li><b>সহমত</b> আপনিও একই কথা বলেন</li>
+                <li><b>উদযাপন</b> ভালো কাজের জন্য সাধুবাদ</li>
+                <li><b>বাম্প</b> পোস্টটি সবার সামনে তুলুন</li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- মাঝ: পোস্ট লেখা + ফিড -->
+          <div class="feed-main">
+            <form class="composer" id="compose" novalidate>
+              <div class="composer__types" role="radiogroup" aria-label="কী জানাতে চান">
+                <label><input type="radio" name="c-type" value="problem" checked><span class="chip chip--problem">সমস্যা</span></label>
+                <label><input type="radio" name="c-type" value="good"><span class="chip chip--good">ভালো খবর</span></label>
+                <label><input type="radio" name="c-type" value="change"><span class="chip chip--change">পরিবর্তন হয়েছে</span></label>
+                <label><input type="radio" name="c-type" value="idea"><span class="chip chip--idea">পরামর্শ</span></label>
+              </div>
+              <textarea id="c-text" maxlength="500" placeholder="কী ঘটেছে? কোথায়? সংক্ষেপে লিখুন..." aria-label="আপনার পোস্ট"></textarea>
+              <div class="composer__row">
+                <select id="c-ward" aria-label="ওয়ার্ড">
+                  <option value="">ওয়ার্ড বেছে নিন</option>
+                  <option>০১</option><option>০২</option><option>০৩</option><option>০৪</option><option>০৫</option>
+                  <option>০৬</option><option>০৭</option><option>০৮</option><option>০৯</option>
+                </select>
+                <input id="c-name" type="text" maxlength="40" placeholder="আপনার নাম (ঐচ্ছিক)" aria-label="আপনার নাম">
+                <label class="composer__anon"><input id="c-anon" type="checkbox" checked> নাম গোপন রাখুন</label>
+                <button class="btn btn--clay" type="submit">পোস্ট করুন</button>
+              </div>
+              <p class="composer__error" id="c-error" role="alert" hidden></p>
+              <p class="composer__rules">গালি, ব্যক্তিগত আক্রমণ বা মিথ্যা তথ্য দেবেন না। কারও নাম-ঠিকানা প্রকাশ করবেন না। মাদকের প্রচার কঠোরভাবে নিষিদ্ধ।</p>
+            </form>
+
+            <p class="feed-note">ডিজাইন প্রিভিউ: নিচের “নমুনা” পোস্টগুলো আসল ঘটনা নয়। আপনার প্রতিক্রিয়া ও পোস্ট এখন শুধু আপনার ব্রাউজারে থাকছে।</p>
+            <div class="feed-count" id="feed-count" aria-live="polite"></div>
+            <div class="feed-list" id="feed-list"></div>
+            <p class="feed-empty" id="feed-empty" hidden>এই ফিল্টারে কোনো পোস্ট নেই। প্রথম পোস্টটি আপনিই করুন।</p>
+          </div>
+
+          <!-- ডান: ট্রেন্ডিং -->
+          <aside class="feed-side" aria-label="ট্রেন্ডিং">
+            <div class="side-card">
+              <h3>সবচেয়ে বেশি বাম্প</h3>
+              <ol class="trend-list" id="trend-list"></ol>
+            </div>
+            <div class="side-card side-card--good">
+              <h3>সমাধান হয়েছে</h3>
+              <p class="side-big" id="side-solved">০</p>
+              <p>সমস্যা মানুষের চাপে সমাধান হয়েছে। প্রতিটি সমাধান উদযাপন করুন।</p>
+            </div>
+            <div class="side-card side-card--youth">
+              <h3>মাদককে না</h3>
+              <p class="side-big" id="side-pledge">০</p>
+              <p>তরুণ অঙ্গীকার করেছে</p>
+              <a class="btn btn--clay side-btn" href="#youth">আমিও অঙ্গীকার করি</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- তরুণ শুভপুর -->
+    <section class="section youth" id="youth" aria-labelledby="youth-title">
+      <div class="container">
+        <div class="head">
+          <div>
+            <p class="kicker">তরুণ শুভপুর</p>
+            <h2 class="title" id="youth-title">শুভপুরের ভবিষ্যৎ তরুণদের হাতে</h2>
+          </div>
+          <p class="lead">মোবাইল হাতে নেওয়া প্রতিটি তরুণই শুভপুরের সবচেয়ে বড় শক্তি। দক্ষতা, খেলা আর সেবায় এগিয়ে যাক তারা, মাদকে নয়।</p>
+        </div>
+
+        <div class="pledge">
+          <div class="pledge__text">
+            <span class="pledge__badge">অঙ্গীকার</span>
+            <h3>আমি মাদককে না বলি।<br>আমার বন্ধুকেও বলতে দেব না।</h3>
+            <p>মাদক একটি পরিবার, একটি গ্রাম, একটি প্রজন্মকে শেষ করে দেয়। আপনি অঙ্গীকার করুন, বন্ধুদের সাথে শেয়ার করুন। প্রতিটি অঙ্গীকার শুভপুরকে নিরাপদ করে।</p>
+            <button class="btn btn--light" id="pledge-btn" type="button">আমি অঙ্গীকার করছি</button>
+            <p class="pledge__done" id="pledge-done" hidden>ধন্যবাদ! আপনি এখন “মাদকমুক্ত শুভপুর” পরিবারের সদস্য।</p>
+          </div>
+          <div class="pledge__counter">
+            <b id="pledge-count">০</b>
+            <span>জন তরুণ অঙ্গীকার করেছে</span>
+            <div class="pledge__bar"><i id="pledge-bar"></i></div>
+            <small>লক্ষ্য: <span id="pledge-goal">১,০০০</span> জন তরুণ</small>
+          </div>
+        </div>
+
+        <div class="youth-grid">
+          <article class="youth-card">
+            <span class="youth-card__no">০১</span>
+            <h3>দক্ষতা শিখি</h3>
+            <p>কম্পিউটার, ফ্রিল্যান্সিং, ইংরেজি, মোবাইল সার্ভিসিং। ঘরে বসেই আয়ের পথ।</p>
+          </article>
+          <article class="youth-card">
+            <span class="youth-card__no">০২</span>
+            <h3>মাঠে ফিরি</h3>
+            <p>ফুটবল, ক্রিকেট, ব্যাডমিন্টন। প্রতিটি ওয়ার্ডে খেলার মাঠ ও টুর্নামেন্ট।</p>
+          </article>
+          <article class="youth-card">
+            <span class="youth-card__no">০৩</span>
+            <h3>সেবায় থাকি</h3>
+            <p>রক্তদান, বন্যায় ত্রাণ, বয়স্কদের সাহায্য। স্বেচ্ছাসেবায় গড়ে ওঠে নেতৃত্ব।</p>
+          </article>
+          <article class="youth-card">
+            <span class="youth-card__no">০৪</span>
+            <h3>উদ্যোক্তা হই</h3>
+            <p>ছোট ব্যবসা, কৃষি, অনলাইন দোকান। চাকরি খুঁজি না, চাকরি দিই।</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- স্মার্ট শুভপুর: ভোট -->
+    <section class="section smart" id="smart" aria-labelledby="smart-title">
+      <div class="container">
+        <div class="smart__intro">
+          <p class="kicker">স্মার্ট শুভপুর</p>
+          <h2 class="title" id="smart-title">আপনার মতে, শুভপুরে সবার আগে কী দরকার?</h2>
+          <p class="lead">একটিতে ভোট দিন। সবার ভোটে ঠিক হবে কোন দাবি সবার আগে তোলা হবে।</p>
+          <p class="smart__note" id="poll-note">ভোট দিলে সবার ফলাফল দেখতে পাবেন।</p>
+        </div>
+        <div class="poll" id="poll" role="group" aria-label="অগ্রাধিকার ভোট">
+          <button class="poll__opt" type="button" data-key="roads"><span class="poll__name">পাকা রাস্তা ও ড্রেন</span><span class="poll__bar"><i></i></span><span class="poll__pct"></span></button>
+          <button class="poll__opt" type="button" data-key="drugs"><span class="poll__name">মাদকমুক্ত শুভপুর</span><span class="poll__bar"><i></i></span><span class="poll__pct"></span></button>
+          <button class="poll__opt" type="button" data-key="jobs"><span class="poll__name">তরুণদের কাজ ও প্রশিক্ষণ</span><span class="poll__bar"><i></i></span><span class="poll__pct"></span></button>
+          <button class="poll__opt" type="button" data-key="digital"><span class="poll__name">অনলাইনে ইউনিয়নের সেবা</span><span class="poll__bar"><i></i></span><span class="poll__pct"></span></button>
+          <button class="poll__opt" type="button" data-key="health"><span class="poll__name">স্বাস্থ্যসেবা ও কমিউনিটি ক্লিনিক</span><span class="poll__bar"><i></i></span><span class="poll__pct"></span></button>
+          <button class="poll__opt" type="button" data-key="clean"><span class="poll__name">পরিষ্কার পরিবেশ ও খাল খনন</span><span class="poll__bar"><i></i></span><span class="poll__pct"></span></button>
+          <p class="poll__total" id="poll-total"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- শুভপুর এক নজরে -->
+    <section class="section" id="glance" aria-labelledby="glance-title">
+      <div class="container">
+        <div class="head">
+          <div>
+            <p class="kicker">শুভপুর এক নজরে</p>
+            <h2 class="title" id="glance-title">আমাদের ইউনিয়ন, সংখ্যায়</h2>
+          </div>
+          <p class="lead">ছাগলনাইয়া উপজেলার ৯ নং ইউনিয়ন। ইউনিয়ন পরিষদ কার্যালয় দারোগার হাটে।</p>
+        </div>
+        <div class="glance">
+          <div><b>৩০,৭৫৩</b><span>জনসংখ্যা (জনশুমারি ২০২২)</span></div>
+          <div><b>১৪.৭০</b><span>বর্গকিলোমিটার আয়তন</span></div>
+          <div><b>৯টি</b><span>ওয়ার্ড</span></div>
+          <div><b>১১টি</b><span>গ্রাম, ১৪টি মৌজা</span></div>
+          <div><b>১২টি</b><span>প্রাথমিক বিদ্যালয় (সরকারি ১০, বেসরকারি ২)</span></div>
+          <div><b>৪টি</b><span>উচ্চ বিদ্যালয়</span></div>
+          <div><b>২টি</b><span>মাদ্রাসা</span></div>
+          <div><b>৫টি</b><span>হাট-বাজার</span></div>
+        </div>
+        <p class="source">তথ্যসূত্র: শুভপুর ইউনিয়ন পরিষদের সরকারি ওয়েবসাইট (subhapurup.feni.gov.bd) ও জনশুমারি ২০২২।</p>
+      </div>
+    </section>
+
+    <!-- ওয়ার্ড ও গ্রাম -->
+    <section class="section wards" id="wards" aria-labelledby="wards-title">
+      <div class="container">
+        <div class="head">
+          <div>
+            <p class="kicker">ওয়ার্ড ও গ্রাম</p>
+            <h2 class="title" id="wards-title">আপনার গ্রাম কোন ওয়ার্ডে?</h2>
+          </div>
+          <p class="lead">কোনো ওয়ার্ডে চাপ দিলে ফিডে শুধু সেই ওয়ার্ডের পোস্ট দেখাবে।</p>
+        </div>
+        <div class="ward-list">
+          <button class="ward-item" type="button" data-ward="০১"><small>০১ নং ওয়ার্ড</small><h3>জয়পুর</h3></button>
+          <button class="ward-item" type="button" data-ward="০২"><small>০২ নং ওয়ার্ড</small><h3>জয়পুর, জয়চাঁদপুর</h3></button>
+          <button class="ward-item" type="button" data-ward="০৩"><small>০৩ নং ওয়ার্ড</small><h3>জয়চাঁদপুর, জগন্নাথ সোনাপুর</h3></button>
+          <button class="ward-item" type="button" data-ward="০৪"><small>০৪ নং ওয়ার্ড</small><h3>দক্ষিণ ও উত্তর বল্লভপুর</h3></button>
+          <button class="ward-item" type="button" data-ward="০৫"><small>০৫ নং ওয়ার্ড</small><h3>কৈয়ারা, ছয়ঘরিয়া</h3><p>দারোগার হাট ও কৈয়ারা দিঘি এলাকা</p></button>
+          <button class="ward-item" type="button" data-ward="০৬"><small>০৬ নং ওয়ার্ড</small><h3>চম্পকনগর</h3></button>
+          <button class="ward-item" type="button" data-ward="০৭"><small>০৭ নং ওয়ার্ড</small><h3>দক্ষিণ মন্দিয়া</h3></button>
+          <button class="ward-item" type="button" data-ward="০৮"><small>০৮ নং ওয়ার্ড</small><h3>দক্ষিণ কুহুমা</h3></button>
+          <button class="ward-item" type="button" data-ward="০৯"><small>০৯ নং ওয়ার্ড</small><h3>উত্তর মন্দিয়া</h3></button>
+        </div>
+        <p class="source">তথ্যসূত্র: শুভপুর ইউনিয়ন পরিষদের সরকারি ওয়েবসাইট, গ্রামের তালিকা।</p>
+      </div>
+    </section>
+
+    <!-- জরুরি নম্বর -->
+    <section class="section help" id="help" aria-labelledby="help-title">
+      <div class="container">
+        <div class="head">
+          <div>
+            <p class="kicker">জরুরি নম্বর</p>
+            <h2 class="title" id="help-title">বিপদে এই নম্বরগুলো মনে রাখুন</h2>
+          </div>
+          <p class="lead">সবগুলো সরকারি হটলাইন, যেকোনো মোবাইল থেকে কল করা যায়।</p>
+        </div>
+        <div class="help-grid">
+          <a class="help-card" href="tel:999"><b>৯৯৯</b><strong>জাতীয় জরুরি সেবা</strong><span>পুলিশ, ফায়ার সার্ভিস, অ্যাম্বুলেন্স</span></a>
+          <a class="help-card" href="tel:333"><b>৩৩৩</b><strong>সরকারি তথ্য ও সেবা</strong><span>যেকোনো সরকারি সেবার তথ্য ও অভিযোগ</span></a>
+          <a class="help-card" href="tel:109"><b>১০৯</b><strong>নারী ও শিশু নির্যাতন</strong><span>নির্যাতন প্রতিরোধে সহায়তা</span></a>
+          <a class="help-card" href="tel:1098"><b>১০৯৮</b><strong>শিশু সহায়তা</strong><span>বিপদে পড়া শিশুর জন্য</span></a>
+          <a class="help-card" href="tel:16263"><b>১৬২৬৩</b><strong>স্বাস্থ্য বাতায়ন</strong><span>ডাক্তারের পরামর্শ, ২৪ ঘণ্টা</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- সেবা ও তথ্য -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="head">
+          <div>
+            <p class="kicker">সেবা ও তথ্য</p>
+            <h2 class="title" id="services-title">কোন কাজে কোথায় যাবেন</h2>
+          </div>
+          <p class="lead">ইউনিয়ন পরিষদের সেবা ও অনলাইনে করা যায় এমন সরকারি কাজের তালিকা।</p>
+        </div>
+        <div class="services">
+          <article class="service service--feature">
+            <h3>শুভপুর ইউনিয়ন পরিষদ</h3>
+            <p>কার্যালয়: দারোগার হাট, ৯ নং শুভপুর ইউনিয়ন, ছাগলনাইয়া, ফেনী</p>
+            <ul>
+              <li><b>জন্ম ও মৃত্যু নিবন্ধন</b></li>
+              <li><b>নাগরিকত্ব ও চারিত্রিক সনদ</b></li>
+              <li><b>ওয়ারিশ সনদ</b></li>
+              <li><b>ট্রেড লাইসেন্স</b></li>
+              <li><b>গ্রাম আদালত</b> (ছোটখাটো বিরোধ নিষ্পত্তি)</li>
+            </ul>
+          </article>
+          <article class="service">
+            <h3>অনলাইনে করুন</h3>
+            <ul>
+              <li><b>জন্ম নিবন্ধন যাচাই:</b> bdris.gov.bd</li>
+              <li><b>এনআইডি সংশোধন:</b> services.nidw.gov.bd</li>
+              <li><b>জমির নামজারি ও খতিয়ান:</b> land.gov.bd</li>
+              <li><b>ইউনিয়নের তথ্য:</b> subhapurup.feni.gov.bd</li>
+            </ul>
+          </article>
+          <article class="service">
+            <h3>ভোটার তথ্য</h3>
+            <p>নির্বাচন কমিশনের বিনামূল্যের অ্যাপ <b>Smart Election Management BD</b>-এ এনআইডি ও জন্ম তারিখ দিয়ে ভোটকেন্দ্র জানা যায়।</p>
+            <ul>
+              <li><b>এসএমএস:</b> PC স্পেস এনআইডি নম্বর লিখে ১০৫-এ পাঠান</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ঐতিহ্য -->
+    <section class="section heritage" aria-labelledby="heritage-title">
+      <div class="container">
+        <div class="heritage__img" role="img" aria-label="কৈয়ারা দিঘি"></div>
+        <div>
+          <p class="kicker">আমাদের ঐতিহ্য</p>
+          <h2 class="title" id="heritage-title">কৈয়ারা দিঘি</h2>
+          <p>দারোগার হাটের পাশে, ৫ নং ওয়ার্ডে শুভপুরের ঐতিহাসিক কৈয়ারা দিঘি। ইউনিয়নের ঐতিহাসিক স্থান, মসজিদ, স্কুল ও হাট-বাজারের ছবি ও ইতিহাস এখানে ধীরে ধীরে যুক্ত হবে। আপনার কাছে পুরোনো ছবি বা গল্প থাকলে পাঠান।</p>
+          <a class="btn btn--river" href="#compose">ছবি বা তথ্য পাঠান</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__big">ভালোবাসি শুভপুর</p>
+          <p>শুভপুরের সবার জন্য একটি নির্দলীয় কমিউনিটি প্ল্যাটফর্ম। এখানে কোনো দল বা প্রার্থীর প্রচারণা হয় না। মাদকের পক্ষে যেকোনো প্রচার নিষিদ্ধ।</p>
+        </div>
+        <div>
+          <h4>দ্রুত লিংক</h4>
+          <ul>
+            <li><a href="#feed">শুভপুর ফিড</a></li>
+            <li><a href="#youth">তরুণ শুভপুর</a></li>
+            <li><a href="#smart">স্মার্ট শুভপুর ভোট</a></li>
+            <li><a href="#help">জরুরি নম্বর</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>জরুরি</h4>
+          <ul>
+            <li>জাতীয় জরুরি সেবা: ৯৯৯</li>
+            <li>সরকারি তথ্য ও সেবা: ৩৩৩</li>
+            <li>নারী ও শিশু নির্যাতন: ১০৯</li>
+            <li>স্বাস্থ্য বাতায়ন: ১৬২৬৩</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© ২০২৬ ভালোবাসি শুভপুর · ৯ নং শুভপুর ইউনিয়ন, ছাগলনাইয়া, ফেনী</span>
+        <span>তথ্যসূত্র: subhapurup.feni.gov.bd</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="feed.js" defer></script>
+  <script src="community.js" defer></script>
+</body>
+</html>

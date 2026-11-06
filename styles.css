@@ -1,0 +1,149 @@
+/* ভালোবাসি শুভপুর: সবার জন্য কমিউনিটি ওয়েবসাইট (ডেস্কটপ, ১৪৪০px) */
+
+:root {
+  --river-900: #0b2a33;
+  --river-700: #134b59;
+  --river-500: #2a7f8f;
+  --river-100: #dcecee;
+  --paddy-500: #c9a227;
+  --paddy-100: #f6edcf;
+  --clay-500: #b5552f;
+  --clay-100: #f6e2d8;
+  --paper: #fbf8f1;
+  --white: #ffffff;
+  --ink: #17221f;
+  --muted: #5d6b67;
+  --line: rgba(19, 75, 89, 0.16);
+  --font-display: "Noto Serif Bengali", serif;
+  --font-body: "Noto Serif Bengali", serif;
+  --container: 1240px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { min-width: 1280px; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 18px; line-height: 1.75; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+.container { width: var(--container); margin: 0 auto; }
+
+/* ---------- টপ বার ---------- */
+.topbar { background: var(--river-900); color: rgba(255,255,255,.8); font-size: 14.5px; }
+.topbar .container { display: flex; justify-content: space-between; padding: 8px 0; }
+.topbar b { color: var(--paddy-500); font-weight: 600; }
+
+/* ---------- হেডার ---------- */
+.header { position: sticky; top: 0; z-index: 40; background: rgba(251,248,241,.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.header .container { display: flex; align-items: center; justify-content: space-between; height: 80px; }
+.logo { display: flex; align-items: center; gap: 12px; }
+.logo svg { flex: none; }
+.logo__name { font-family: var(--font-display); font-weight: 700; font-size: 24px; color: var(--river-900); line-height: 1.1; }
+.logo__sub { display: block; font-size: 13px; color: var(--muted); font-weight: 400; font-family: var(--font-body); }
+.menu { display: flex; gap: 30px; font-size: 17px; font-weight: 500; }
+.menu a:hover { color: var(--clay-500); }
+
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: 10px; font-family: var(--font-body); font-weight: 600; font-size: 17px; border: 0; cursor: pointer; transition: transform .2s, background .2s; }
+.btn:hover { transform: translateY(-2px); }
+.btn--clay { background: var(--clay-500); color: #fff; }
+.btn--clay:hover { background: #9c4625; }
+.btn--river { background: var(--river-700); color: #fff; }
+.btn--line { box-shadow: inset 0 0 0 2px currentColor; }
+
+/* ---------- হিরো ---------- */
+.hero { position: relative; overflow: hidden; background: var(--river-900); color: #fff; }
+.hero .container { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 460px; gap: 60px; padding: 110px 0 130px; }
+.hero__eyebrow { font-size: 17px; letter-spacing: .02em; color: var(--paddy-500); font-weight: 600; }
+.hero h1 { font-family: var(--font-display); font-weight: 700; font-size: 92px; line-height: 1.1; margin: 14px 0 22px; }
+.hero h1 span { color: var(--paddy-500); }
+.hero__lead { font-size: 21px; color: rgba(255,255,255,.82); max-width: 620px; margin-bottom: 38px; }
+.hero__actions { display: flex; gap: 14px; }
+.hero__actions .btn--line { color: #fff; }
+.hero__fields { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; width: 100%; height: 220px; }
+
+.hero__card { align-self: center; padding: 34px; border-radius: 18px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); }
+.hero__card h2 { font-family: var(--font-display); font-weight: 600; font-size: 24px; margin-bottom: 18px; }
+.hero__card ol { list-style: none; counter-reset: s; }
+.hero__card li { counter-increment: s; display: grid; grid-template-columns: 34px 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid rgba(255,255,255,.12); font-size: 16.5px; color: rgba(255,255,255,.88); }
+.hero__card li::before { content: counter(s, bengali); width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--paddy-500); color: var(--river-900); font-weight: 700; font-size: 15px; }
+
+/* ---------- সাধারণ সেকশন ---------- */
+.section { padding: 100px 0; }
+.head { display: grid; grid-template-columns: 1fr 420px; gap: 60px; align-items: end; margin-bottom: 50px; }
+.kicker { font-size: 15px; font-weight: 600; letter-spacing: .05em; color: var(--clay-500); }
+.title { font-family: var(--font-display); font-weight: 700; font-size: 50px; line-height: 1.25; color: var(--river-900); margin-top: 6px; }
+.lead { color: var(--muted); }
+
+/* ---------- এক নজরে ---------- */
+.glance { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 3px solid var(--river-900); }
+.glance div { padding: 30px 28px 26px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.glance div:nth-child(4n) { border-right: 0; }
+.glance b { display: block; font-family: var(--font-display); font-size: 46px; line-height: 1.15; color: var(--river-700); }
+.glance span { font-size: 16px; color: var(--muted); }
+.source { margin-top: 14px; font-size: 14px; color: var(--muted); }
+
+/* ---------- ৯ ওয়ার্ড ---------- */
+.wards { background: var(--white); }
+.ward-list { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+.ward-item { padding: 28px 30px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background .2s; }
+.ward-item:nth-child(3n) { border-right: 0; }
+.ward-item:nth-last-child(-n+3) { border-bottom: 0; }
+.ward-item:hover { background: var(--river-100); }
+.ward-item small { font-size: 14px; font-weight: 600; color: var(--clay-500); }
+.ward-item h3 { font-family: var(--font-display); font-weight: 600; font-size: 26px; color: var(--river-900); margin: 2px 0 4px; }
+.ward-item p { font-size: 15.5px; color: var(--muted); }
+
+/* ---------- সমস্যা জানান ---------- */
+.report .container { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; }
+.report__list { display: grid; gap: 14px; margin-top: 34px; }
+.issue { display: grid; grid-template-columns: 110px 1fr; gap: 18px; padding: 20px 22px; border-radius: 14px; background: var(--white); border: 1px solid var(--line); }
+.issue__tag { align-self: start; text-align: center; padding: 4px 0; border-radius: 8px; font-size: 14px; font-weight: 600; background: var(--clay-100); color: var(--clay-500); }
+.issue__tag--road { background: var(--paddy-100); color: #8a6c0f; }
+.issue__tag--water { background: var(--river-100); color: var(--river-700); }
+.issue p { font-size: 17px; }
+.issue small { display: block; font-size: 14px; color: var(--muted); margin-top: 4px; }
+.form { padding: 40px; border-radius: 20px; background: var(--river-700); color: #fff; }
+.form h3 { font-family: var(--font-display); font-weight: 600; font-size: 30px; }
+.form > p { color: rgba(255,255,255,.75); font-size: 16px; margin: 6px 0 24px; }
+.form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.field { display: block; margin-bottom: 16px; }
+.field span { display: block; font-size: 15px; margin-bottom: 6px; color: rgba(255,255,255,.85); }
+.field input, .field select, .field textarea { width: 100%; padding: 13px 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,.22); background: rgba(255,255,255,.08); color: #fff; font-family: var(--font-body); font-size: 16px; }
+.field select option { color: var(--ink); }
+.field textarea { height: 120px; resize: none; }
+.check { display: flex; gap: 10px; align-items: center; font-size: 15px; color: rgba(255,255,255,.85); margin-bottom: 22px; }
+.check input { width: 18px; height: 18px; accent-color: var(--paddy-500); }
+
+/* ---------- জরুরি নম্বর ---------- */
+.help { background: var(--river-900); color: #fff; }
+.help .title { color: #fff; }
+.help .lead { color: rgba(255,255,255,.7); }
+.help-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.help-card { padding: 28px 24px; border-radius: 16px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); transition: background .2s; }
+.help-card:hover { background: rgba(255,255,255,.1); }
+.help-card b { display: block; font-family: var(--font-display); font-size: 48px; line-height: 1.1; color: var(--paddy-500); }
+.help-card strong { display: block; font-size: 18px; margin: 8px 0 2px; }
+.help-card span { font-size: 15px; color: rgba(255,255,255,.7); }
+
+/* ---------- সেবা ও তথ্য ---------- */
+.services { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 20px; }
+.service { padding: 32px; border-radius: 18px; background: var(--white); border: 1px solid var(--line); }
+.service--feature { background: var(--paddy-100); border-color: transparent; }
+.service h3 { font-family: var(--font-display); font-weight: 600; font-size: 25px; color: var(--river-900); margin-bottom: 10px; }
+.service p, .service li { font-size: 16.5px; color: var(--muted); }
+.service ul { list-style: none; margin-top: 8px; }
+.service li { padding: 7px 0; border-bottom: 1px dashed var(--line); }
+.service li b { color: var(--ink); font-weight: 600; }
+
+/* ---------- ঐতিহ্য ---------- */
+.heritage { background: var(--white); }
+.heritage .container { display: grid; grid-template-columns: 560px 1fr; gap: 70px; align-items: center; }
+.heritage__img { height: 440px; border-radius: 20px; background: url("images/kaiara-dighi.jpg") center/cover, linear-gradient(160deg, var(--river-500), var(--river-900)); position: relative; }
+.heritage__img::after { content: "images/kaiara-dighi.jpg"; position: absolute; left: 16px; bottom: 14px; padding: 4px 12px; border-radius: 999px; background: rgba(0,0,0,.45); color: #fff; font-size: 13px; }
+.heritage p { color: var(--muted); margin: 16px 0 26px; }
+
+/* ---------- ফুটার ---------- */
+.footer { background: var(--river-900); color: rgba(255,255,255,.72); padding: 70px 0 34px; }
+.footer__top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 60px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,.12); }
+.footer h4 { color: #fff; font-size: 17px; margin-bottom: 12px; }
+.footer li { list-style: none; font-size: 15.5px; padding: 3px 0; }
+.footer__big { font-family: var(--font-display); font-size: 38px; line-height: 1.3; color: #fff; margin-bottom: 12px; }
+.footer__bottom { display: flex; justify-content: space-between; padding-top: 24px; font-size: 14.5px; }
